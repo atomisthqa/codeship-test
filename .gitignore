@@ -1,0 +1,7 @@
+log/*
+target/*
+*.iml
+.nrepl-port
+.idea/
+.lein-failures
+.lein-repl-history

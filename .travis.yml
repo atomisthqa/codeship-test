@@ -1,0 +1,32 @@
+language: clojure
+env:
+  global:
+  - COMMIT: ${TRAVIS_COMMIT::7}
+  - secure: CT/FkQxtr+73nwOEJHImF3PYU4L43U/8awTFnOsVPfD1+4KL618+Dv3XXSSyKrCZE6T29q2lRG2mau+Bj5KMD9iLIJW9zI/wyVBdBYjcj2kSoyPtgdKB8Un2TLuIjzna43TfU0iNx0oxw6TndEU4p2i5KTTdZaW4zDZ/Do+w/CWd5F29KFDIrbWVvYzivGhE5KSBPv7ftT699ihZcpotlNm3U4Yp/ZDhwrWH9nffMKydYa1xF/85ULil7YpjqMDDscIkB/wYmgmaMvpldSu98CKXAmt9xnYhL5xx0/pFdU14wxizo1WGe1v0BY9U/gIa22DXYJ+WognkU2YPDZad1aGNurJ5TpYUhk1TnuJFsxd17/voj5fOj/cKixfYck/1RSfoh6jma5oZDHKf1/wXV4rXv0njL+Wkh137xLqObWU7OyaD4LZOFMomCCWIZbZByw6mcXidO4vKpnwjWuil+MTMUyi4gmp+gsxJ9nDHDhat8fC9GNBWdby7TA2f9e/G7ZapMqTEnD36AnvRJdrW2/jkcV5bWPzK3izMyEnTXSDMUGhMrpTgl9635hZQ2mfkg3wcPlSu+eJPFLl7Ua2raRZFFy4pLc/3BDx9DkxmsH74tP8jeIAylEkkLC/72dwnIQe0nZdEg1NV53wXJ9uKF44WlNFbGEZlmA6VrqR9xLY=
+  - secure: g1NAO94Y4P8K05AlwRnxwH73lNzu+OUZV3IT00HUfzlKkCW77L7bYn5vrDnOASHGNOitJ6eDEBSHt6O7X3sDMYQQq9LY5S7BmuSTWGQRvn+h0VHr5qeBsl8Vl+mWhDK1NA9C6SSW16Bur8XXzOF/PEIN+PejEGTKZfKh6sE2SpmGQsJ+24/NYqWIQUqvunmDRoPaMcgldd8wP07z02NTX0x4eailpXyVfSqrI2w7OKalQrHXsqBuHbVRmjGljIeV6bCKJMLWQlOXeR1HliDJEQoqXhY98XJz/d3vt+zSMTeUxfHtWp8KG2bGOmgYzoFYj8CJu19necTXgq6fmjdcfFlKONRsjrhAMikvPcZWLKIQitLAoEPEMXer/ianKNaH/sWfcTzuTIUrjgTn53fayqdB3vowQDng/TA37cFjYIR0c9wnD66cBxyBg735snMWt31bptijw244Rhfjp6r2D7kUyO3YeuqeS8eC0z1H2Y+WXvsKgJ6xr9/MAZTS+ILidsqKQwqsQrsth8j/wP5hMYDC5J47WQKEHt9j4e24C43KMIvsDgJ9k688nIdQa+QdvTi/7YL4aFcdVbXl5nqv6ln3HXL73cDLi8yQLVj+z7fYzG4JYN9kOzZ/dFu80BNS6u4OpGmejOofcBVuXEY/f+rj27B19S7bPHsox3W/XyU=
+sudo: required
+install:
+- sudo rm -rf ~/.lein; mkdir lein; wget -O lein/lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein;
+  chmod a+x lein/lein; lein/lein version
+- sudo rm -rf ~/.lein-dynamodb-local; mkdir ~/.lein-dynamodb-local; wget -O ~/.lein-dynamodb-local/dynamo.zip
+  https://s3-us-west-2.amazonaws.com/dynamodb-local/dynamodb_local_latest.zip; unzip
+  ~/.lein-dynamodb-local/dynamo.zip -d ~/.lein-dynamodb-local;
+script: ./travis-build.sh
+jdk:
+- oraclejdk8
+notifications:
+  email: false
+  webhooks:
+    on_success: always
+    on_failure: always
+    on_start: always
+    urls:
+    - https://webhook.atomist.com/travis
+branches:
+  except:
+  - /^\d+\.\d+\.\d+.*$/
+services:
+- docker
+cache:
+  directories:
+  - $HOME/.m2

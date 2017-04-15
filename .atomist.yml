@@ -1,0 +1,15 @@
+---
+kind: "operation"
+client: "atomist-bot"
+generator:
+  name: "CljService"
+  group: "atomist"
+  artifact: "cljservice"
+  version: "0.1.0"
+  origin:
+    repo: "git@github.com:atomisthq/rugarchives.git"
+    branch: "master"
+    sha: "b92424c*"
+  parameters:
+    - "inputParameter": "input"
+

@@ -1,0 +1,9 @@
+{
+ :domain "test.atomist.services."
+ :port   "8081"
+ :kafka "{kalapas:secret/kafka}"
+ :dynamo {:endpoint {:endpoint "http://localhost:6798"}
+          :creds {:access_key "" :secret_key ""}}
+ :mavenrepos-url "https://api-staging.atomist.services/m3/teams"
+ :artifactory-url "https://atomist.jfrog.io/atomist/api/search/aql"
+ }

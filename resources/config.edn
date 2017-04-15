@@ -1,0 +1,9 @@
+{
+ :domain "{metadata:domain/name}"
+ :port   "8080"
+ :kafka "{kalapas:secret/kafka}"
+ :dynamo {:endpoint "{kalapas:secret/dynamo}"
+          :creds "{kalapas:aws/creds/dynamo}"}
+ :mavenrepos-url "http://api-staging.atomist.services/m3/teams"
+ :artifactory-url "https://atomist.jfrog.io/atomist/api/search/aql"
+ }

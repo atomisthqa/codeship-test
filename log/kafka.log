@@ -1,0 +1,612 @@
+03/29 08:47:25.775 - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [kafkaprod.atomist.aivencloud.com:18727]
+	ssl.keystore.type = JKS
+	enable.auto.commit = false
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = [hidden]
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = /tmp/kafka.client.truststore.jks
+	ssl.keystore.password = [hidden]
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = jim
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = [hidden]
+	fetch.max.wait.ms = 100
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = /tmp/kafka.client.keystore.jks
+	ssl.cipher.suites = null
+	security.protocol = SSL
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+03/29 09:28:49.219 - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [kafkaprod.atomist.aivencloud.com:18727]
+	ssl.keystore.type = JKS
+	enable.auto.commit = false
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = [hidden]
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = /tmp/kafka.client.truststore.jks
+	ssl.keystore.password = [hidden]
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = jim
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = [hidden]
+	fetch.max.wait.ms = 100
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = /tmp/kafka.client.keystore.jks
+	ssl.cipher.suites = null
+	security.protocol = SSL
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+03/29 09:28:49.579 - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [kafkaprod.atomist.aivencloud.com:18727]
+	ssl.keystore.type = JKS
+	enable.auto.commit = false
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = [hidden]
+	client.id = consumer-2
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = /tmp/kafka.client.truststore.jks
+	ssl.keystore.password = [hidden]
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = jim
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = [hidden]
+	fetch.max.wait.ms = 100
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = /tmp/kafka.client.keystore.jks
+	ssl.cipher.suites = null
+	security.protocol = SSL
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+03/29 09:28:49.661 - Kafka version : 0.10.0.1
+03/29 09:28:49.662 - Kafka commitId : a7a17cdec9eaa6c5
+03/29 09:28:52.241 - Discovered coordinator 54.242.53.112:18727 (id: 2147483635 rack: null) for group jim.
+03/29 09:28:53.485 - Revoking previously assigned partitions [] for group jim
+03/29 09:28:53.485 - (Re-)joining group jim
+03/29 09:28:54.703 - Successfully joined group jim with generation 1
+03/29 09:28:54.706 - Setting newly assigned partitions [kube-15, kube-12, kube-11, kube-14, kube-13, kube-8, kube-7, kube-10, kube-9, kube-4, kube-3, kube-6, kube-5, kube-0, kube-2, kube-1] for group jim
+03/29 09:32:43.516 - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [kafkaprod.atomist.aivencloud.com:18727]
+	ssl.keystore.type = JKS
+	enable.auto.commit = false
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = [hidden]
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = /tmp/kafka.client.truststore.jks
+	ssl.keystore.password = [hidden]
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = jim
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = [hidden]
+	fetch.max.wait.ms = 100
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = /tmp/kafka.client.keystore.jks
+	ssl.cipher.suites = null
+	security.protocol = SSL
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+03/29 09:32:43.583 - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [kafkaprod.atomist.aivencloud.com:18727]
+	ssl.keystore.type = JKS
+	enable.auto.commit = false
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = [hidden]
+	client.id = consumer-3
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = /tmp/kafka.client.truststore.jks
+	ssl.keystore.password = [hidden]
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = jim
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = [hidden]
+	fetch.max.wait.ms = 100
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = /tmp/kafka.client.keystore.jks
+	ssl.cipher.suites = null
+	security.protocol = SSL
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+03/29 09:32:43.586 - Kafka version : 0.10.0.1
+03/29 09:32:43.586 - Kafka commitId : a7a17cdec9eaa6c5
+03/29 09:32:44.549 - Discovered coordinator 54.242.53.112:18727 (id: 2147483635 rack: null) for group jim.
+03/29 09:32:44.641 - Revoking previously assigned partitions [] for group jim
+03/29 09:32:44.642 - (Re-)joining group jim
+03/29 09:32:45.687 - Successfully joined group jim with generation 3
+03/29 09:32:45.687 - Setting newly assigned partitions [kube-15, kube-12, kube-11, kube-14, kube-13, kube-8, kube-7, kube-10, kube-9, kube-4, kube-3, kube-6, kube-5, kube-0, kube-2, kube-1] for group jim
+03/29 10:10:14.401 - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [kafkaprod.atomist.aivencloud.com:18727]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = [hidden]
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = /tmp/kafka.client.truststore.jks
+	ssl.keystore.password = [hidden]
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = jim
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = [hidden]
+	fetch.max.wait.ms = 100
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = /tmp/kafka.client.keystore.jks
+	ssl.cipher.suites = null
+	security.protocol = SSL
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+03/29 10:10:14.459 - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [kafkaprod.atomist.aivencloud.com:18727]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = [hidden]
+	client.id = consumer-4
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = /tmp/kafka.client.truststore.jks
+	ssl.keystore.password = [hidden]
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = jim
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = [hidden]
+	fetch.max.wait.ms = 100
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = /tmp/kafka.client.keystore.jks
+	ssl.cipher.suites = null
+	security.protocol = SSL
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+03/29 10:10:14.473 - Kafka version : 0.10.0.1
+03/29 10:10:14.473 - Kafka commitId : a7a17cdec9eaa6c5
+03/29 10:10:15.513 - Discovered coordinator 54.242.53.112:18727 (id: 2147483635 rack: null) for group jim.
+03/29 10:10:15.630 - Revoking previously assigned partitions [] for group jim
+03/29 10:10:15.630 - (Re-)joining group jim
+03/29 10:10:16.476 - Successfully joined group jim with generation 5
+03/29 10:10:16.477 - Setting newly assigned partitions [kube-15, kube-12, kube-11, kube-14, kube-13, kube-8, kube-7, kube-10, kube-9, kube-4, kube-3, kube-6, kube-5, kube-0, kube-2, kube-1] for group jim
+03/29 10:19:48.109 - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [kafkaprod.atomist.aivencloud.com:18727]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = [hidden]
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = /tmp/kafka.client.truststore.jks
+	ssl.keystore.password = [hidden]
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = jim
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = [hidden]
+	fetch.max.wait.ms = 100
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = /tmp/kafka.client.keystore.jks
+	ssl.cipher.suites = null
+	security.protocol = SSL
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+03/29 10:19:48.437 - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [kafkaprod.atomist.aivencloud.com:18727]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = [hidden]
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = /tmp/kafka.client.truststore.jks
+	ssl.keystore.password = [hidden]
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = jim
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = [hidden]
+	fetch.max.wait.ms = 100
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = /tmp/kafka.client.keystore.jks
+	ssl.cipher.suites = null
+	security.protocol = SSL
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+03/29 10:19:48.468 - Kafka version : 0.10.0.1
+03/29 10:19:48.468 - Kafka commitId : a7a17cdec9eaa6c5
+03/29 10:19:50.307 - Discovered coordinator 54.242.53.112:18727 (id: 2147483635 rack: null) for group jim.
+03/29 10:19:51.573 - Revoking previously assigned partitions [] for group jim
+03/29 10:19:51.574 - (Re-)joining group jim
+03/29 10:19:52.589 - Successfully joined group jim with generation 7
+03/29 10:19:52.591 - Setting newly assigned partitions [kube-15, kube-12, kube-11, kube-14, kube-13, kube-8, kube-7, kube-10, kube-9, kube-4, kube-3, kube-6, kube-5, kube-0, kube-2, kube-1] for group jim
+03/29 10:25:54.672 - Marking the coordinator 54.242.53.112:18727 (id: 2147483635 rack: null) dead for group jim
+03/29 10:25:54.674 - Auto offset commit failed for group jim: Commit offsets failed with retriable exception. You should retry committing offsets.
+03/29 10:25:54.674 - Auto offset commit failed for group jim: Commit offsets failed with retriable exception. You should retry committing offsets.
+03/29 10:28:14.974 - Discovered coordinator 54.242.53.112:18727 (id: 2147483635 rack: null) for group jim.
+03/29 10:28:18.849 - Auto offset commit failed for group jim: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+03/29 10:28:20.427 - Auto offset commit failed for group jim: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+03/29 10:28:20.452 - Auto offset commit failed for group jim: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+03/29 10:28:20.452 - Revoking previously assigned partitions [kube-15, kube-12, kube-11, kube-14, kube-13, kube-8, kube-7, kube-10, kube-9, kube-4, kube-3, kube-6, kube-5, kube-0, kube-2, kube-1] for group jim
+03/29 10:28:20.453 - (Re-)joining group jim
+03/29 10:28:22.022 - (Re-)joining group jim
+03/29 10:28:23.162 - Successfully joined group jim with generation 9
+03/29 10:28:23.162 - Setting newly assigned partitions [kube-15, kube-12, kube-11, kube-14, kube-13, kube-8, kube-7, kube-10, kube-9, kube-4, kube-3, kube-6, kube-5, kube-0, kube-2, kube-1] for group jim
+03/29 10:34:42.901 - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [kafkaprod.atomist.aivencloud.com:18727]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = [hidden]
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = /tmp/kafka.client.truststore.jks
+	ssl.keystore.password = [hidden]
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = jim
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = [hidden]
+	fetch.max.wait.ms = 100
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = /tmp/kafka.client.keystore.jks
+	ssl.cipher.suites = null
+	security.protocol = SSL
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+03/29 10:34:43.101 - ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [kafkaprod.atomist.aivencloud.com:18727]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = [hidden]
+	client.id = consumer-2
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = /tmp/kafka.client.truststore.jks
+	ssl.keystore.password = [hidden]
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = jim
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = [hidden]
+	fetch.max.wait.ms = 100
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = /tmp/kafka.client.keystore.jks
+	ssl.cipher.suites = null
+	security.protocol = SSL
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+03/29 10:34:43.104 - Kafka version : 0.10.0.1
+03/29 10:34:43.104 - Kafka commitId : a7a17cdec9eaa6c5
+03/29 10:34:46.138 - Discovered coordinator 54.242.53.112:18727 (id: 2147483635 rack: null) for group jim.
+03/29 10:34:46.491 - Revoking previously assigned partitions [] for group jim
+03/29 10:34:46.491 - (Re-)joining group jim
+03/29 10:34:50.560 - Revoking previously assigned partitions [kube-15, kube-12, kube-11, kube-14, kube-13, kube-8, kube-7, kube-10, kube-9, kube-4, kube-3, kube-6, kube-5, kube-0, kube-2, kube-1] for group jim
+03/29 10:34:50.560 - (Re-)joining group jim
+03/29 10:34:53.474 - Successfully joined group jim with generation 10
+03/29 10:34:53.474 - Setting newly assigned partitions [kube-12, kube-11, kube-14, kube-13, kube-8, kube-10, kube-9, kube-15] for group jim
+03/29 10:34:53.479 - Successfully joined group jim with generation 10
+03/29 10:34:53.480 - Setting newly assigned partitions [kube-7, kube-4, kube-3, kube-6, kube-5, kube-0, kube-2, kube-1] for group jim

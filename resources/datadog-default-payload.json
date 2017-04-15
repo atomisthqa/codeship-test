@@ -1,0 +1,19 @@
+{
+  "id": "3699420303198261663",
+  "title": "[Recovered] At least 1 smoke tests has been failing for the last 10mn",
+  "last_updated": "1484765499000",
+  "date": "1484765499000",
+  "event_type": "query_alert_monitor",
+  "body": "\n@slack-test-alerts @webhook-Test\n\n`max(last_5m):avg:smoketest.status{atomist_domain:staging.atomist.services.} < 1`\n\nMetric value: 1.0\n\nMetric Graph: https://app.datadoghq.com/monitors#1410957?to_ts=1484765399000&from_ts=1484764199000 \u00b7 Monitor Status: https://app.datadoghq.com/monitors#1410957? \u00b7 Edit Monitor: https://app.datadoghq.com/monitors#1410957/edit \u00b7 Event URL: https://app.datadoghq.com/event/event?id=3699420303198261663",
+  "org": {
+    "id": "82585",
+    "name": "atomist"
+  },
+  "link": "https://app.datadoghq.com/event/event?id=3699420303198261663",
+  "tags": "atomist_domain:staging.atomist.services.,monitor",
+  "hostname": "null",
+  "alert": {
+    "transition": "Recovered",
+    "status": ""
+  }
+}
