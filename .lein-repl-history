@@ -1,9 +1,0 @@
-(ns local-poller)
-(load "local_poller")
-(start)
-quit
-(ns local-poller)
-(load "local_poller")
-(start)
-(mount/stop)
-exit
