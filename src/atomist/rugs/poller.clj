@@ -129,16 +129,3 @@
                    (initialize-offsets)
                    (loop/periodic-loop poll 30000))
           :stop (loop/stop poller))
-
-(comment
-  (start #'atomist.rugs.config-service/config-service)
-  (stop #'atomist.rugs.config-service/config-service)
-  (start #'poller)
-  (.printStackTrace *e)
-  (stop #'poller)
-  (stop)
-  (println poller))
-
-(comment
-  (clojure.repl/doc f/formatters)
-  (f/show-formatters))
