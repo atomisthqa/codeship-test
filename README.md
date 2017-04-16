@@ -7,6 +7,7 @@
 
 ## Rug Archive Change Events
 
+
 Each time we notice that a new rug archive has gone into one of the maven repos we support, we will raise an event like this
 on the `rug_publish` kafka topic:
 
