@@ -27,3 +27,4 @@ on the `rug_publish` kafka topic:
 * the `team-id` for a global repo might be something unrelated to slack (like `global`)
 crap
 crap
+crap
