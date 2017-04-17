@@ -26,3 +26,4 @@ on the `rug_publish` kafka topic:
 * multiple new rug archvies may be sent in a single event
 * the `team-id` for a global repo might be something unrelated to slack (like `global`)
 crap
+crap
