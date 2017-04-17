@@ -28,3 +28,4 @@ on the `rug_publish` kafka topic:
 crap
 crap
 crap
+crap
