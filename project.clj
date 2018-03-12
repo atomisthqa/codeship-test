@@ -1,6 +1,6 @@
 (defproject rugarchvies-service "0.1.0-SNAPSHOT"
   :description "get external events on to our Atomist Kafka topics"
-  :dependencies [[org.clojure/clojure          "1.8.0"]
+  :dependencies [[org.clojure/clojure          "1.9.0"]
                  [metosin/compojure-api        "1.1.2"]
                  [ring/ring-jetty-adapter      "1.4.0"]
 
