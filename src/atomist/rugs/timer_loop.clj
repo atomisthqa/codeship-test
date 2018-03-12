@@ -9,10 +9,10 @@
   [f time-in-ms]
   (let [stop (async/chan)]
     (async/go-loop []
-                   (async/alt!
-                     (async/timeout time-in-ms) (do (async/<! (async/thread (f)))
-                                                    (recur))
-                     stop :stop))
+      (async/alt!
+        (async/timeout time-in-ms) (do (async/<! (async/thread (f)))
+                                       (recur))
+        stop :stop))
     stop))
 
 (defn stop

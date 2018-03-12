@@ -22,8 +22,7 @@
                  [ch.qos.logback/logback-classic  "1.0.13"]
                  [org.slf4j/slf4j-api "1.7.21"]
                  [org.slf4j/jcl-over-slf4j "1.7.21"]
-                 [io.clj/logging "0.8.1"]
-                 ]
+                 [io.clj/logging "0.8.1"]]
 
   :exclusions [commons-logging org.slf4j/slf4j-log4j12]
 
@@ -44,14 +43,12 @@
                    :in-memory? true
                    :shared-db? true}
 
-  :repositories [
-                 ["releases" {:url      "https://sforzando.artifactoryonline.com/sforzando/libs-release-local"
+  :repositories [["releases" {:url      "https://sforzando.artifactoryonline.com/sforzando/libs-release-local"
                               :username [:gpg :env/artifactory_user]
                               :password [:gpg :env/artifactory_pwd]}]
                  ["plugins" {:url      "https://sforzando.artifactoryonline.com/sforzando/plugins-release"
                              :username [:gpg :env/artifactory_user]
-                             :password [:gpg :env/artifactory_pwd]}]
-                 ]
+                             :password [:gpg :env/artifactory_pwd]}]]
 
   :profiles {:dev        {:dependencies [[javax.servlet/servlet-api "2.5"]
                                          [ring/ring-mock "0.3.0"]]

@@ -1,20 +1,20 @@
 (ns atomist.rugs.handler
   (:require
-    [atomist.rugs.config-service :as config-service]
-    [atomist.rugs.dynamo :as dynamo]
-    [atomist.rugs.kafka :refer [kafka-producer]]
-    [com.atomist.kafka.client :as kafka]
-    [clj-time.coerce :as time.coerce]
-    [clj-time.core :as time]
-    [clojure.data.json :as json]
-    [clojure.pprint :refer :all]
-    [clojure.string :as str]
-    [clojure.tools.logging :as log]
-    [compojure.api.sweet :refer :all]
-    [environ.core :refer [env]]
-    [ring.util.http-response :refer :all]
-    [schema.core :as s]
-    [mount.core :refer [defstate start stop]]))
+   [atomist.rugs.config-service :as config-service]
+   [atomist.rugs.dynamo :as dynamo]
+   [atomist.rugs.kafka :refer [kafka-producer]]
+   [com.atomist.kafka.client :as kafka]
+   [clj-time.coerce :as time.coerce]
+   [clj-time.core :as time]
+   [clojure.data.json :as json]
+   [clojure.pprint :refer :all]
+   [clojure.string :as str]
+   [clojure.tools.logging :as log]
+   [compojure.api.sweet :refer :all]
+   [environ.core :refer [env]]
+   [ring.util.http-response :refer :all]
+   [schema.core :as s]
+   [mount.core :refer [defstate start stop]]))
 
 (defmethod compojure.api.meta/restructure-param :producer
   [_ producer acc]
@@ -24,29 +24,29 @@
 
 (def api-handlers
   (api
-    {:swagger
-     {:ui   "/api-docs"
-      :spec "/swagger.json"
-      :data {:info {:title       "Incoming Webhooks"
-                    :description "Atomist event Ingestion Service - we are here to take HTTP messages and put the data
+   {:swagger
+    {:ui   "/api-docs"
+     :spec "/swagger.json"
+     :data {:info {:title       "Incoming Webhooks"
+                   :description "Atomist event Ingestion Service - we are here to take HTTP messages and put the data
                                   on to kafka topics"}
-             :tags [{:name "slack", :description "Slack specific Action messages"}
-                    {:name "k8-admin", :description "k8 management endpoints"}
-                    {:name "webhooks", :description "manage the webhooks exposed to public"}]}}}
+            :tags [{:name "slack", :description "Slack specific Action messages"}
+                   {:name "k8-admin", :description "k8 management endpoints"}
+                   {:name "webhooks", :description "manage the webhooks exposed to public"}]}}}
 
-    (context "/admin" []
-      :tags ["k8-admin"]
-      (GET "/health" []
-        :tags ["admin"]
-        :summary "Returns OK when we are healthy"
-        (ok "healthy"))
+   (context "/admin" []
+     :tags ["k8-admin"]
+     (GET "/health" []
+       :tags ["admin"]
+       :summary "Returns OK when we are healthy"
+       (ok "healthy"))
 
-      (GET "/ready" []
-        :tags ["admin"]
-        :summary "Returns OK when we are ready to serve requests"
-        (if @ready
-          (ok "ready")
-          (service-unavailable {:status "Shutting down"}))))))
+     (GET "/ready" []
+       :tags ["admin"]
+       :summary "Returns OK when we are ready to serve requests"
+       (if @ready
+         (ok "ready")
+         (service-unavailable {:status "Shutting down"}))))))
 
 (defn make-handler
   "Wrap a ring handler (e.g. routes from defapi) into middleware which will
@@ -59,5 +59,5 @@
                 app)))
 
 (defstate handler :start (make-handler api-handlers)
-                  :stop (fn [_] (fn [req] nil)))
+  :stop (fn [_] (fn [req] nil)))
 

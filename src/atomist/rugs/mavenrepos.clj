@@ -16,5 +16,5 @@
       (log/warn "unable to fetch repos"))))
 
 (defstate mavenrepos
-          :start (loop/periodic-loop fetch-maven-repos 60000)
-          :stop (loop/stop mavenrepos))
+  :start (loop/periodic-loop fetch-maven-repos 60000)
+  :stop (loop/stop mavenrepos))

@@ -27,7 +27,7 @@
 
 (defn -main [& args]
   (log/info
-    (-> (mount/except #{#'atomist.rugs.kafka/kafka-consumer})
-        (mount/start)))
+   (-> (mount/except #{#'atomist.rugs.kafka/kafka-consumer})
+       (mount/start)))
   (.. Runtime getRuntime (addShutdownHook (Thread. (on-stop))))
   (.. Thread currentThread join))

@@ -1,14 +1,14 @@
 (ns atomist.rugs.dynamo
   (:require
-    [taoensso.faraday :as far]
-    [atomist.rugs.config-service :refer [config-service]]
-    [com.atomist.clj-config.config :as config]
-    [clojure.tools.logging :as log]
-    [clojure.string :as str]
-    [diehard.core :as diehard]
-    [taoensso.faraday :as ddb]
-    [clj-time.core :as time]
-    [mount.core :refer [defstate]])
+   [taoensso.faraday :as far]
+   [atomist.rugs.config-service :refer [config-service]]
+   [com.atomist.clj-config.config :as config]
+   [clojure.tools.logging :as log]
+   [clojure.string :as str]
+   [diehard.core :as diehard]
+   [taoensso.faraday :as ddb]
+   [clj-time.core :as time]
+   [mount.core :refer [defstate]])
   (:import (com.amazonaws AmazonServiceException)
            (clojure.lang Ref Atom)))
 
@@ -41,8 +41,8 @@
         {:keys [endpoint]} (get-config-value [:dynamo :endpoint])]
     (log/infof "Dynamo endpoint: %s; access_key: %s" endpoint access_key)
     (cond->
-      {:access-key access_key
-       :secret-key secret_key}
+     {:access-key access_key
+      :secret-key secret_key}
       (not (str/blank? endpoint)) (assoc :endpoint endpoint))))
 
 (defn dynamo-creds
@@ -54,9 +54,9 @@
 (defn retryable-dynamo-error?
   [e]
   (and
-    (= AmazonServiceException (class e))
-    (not (.contains (.getMessage e)
-                    "Status Code: 400; Error Code: ValidationException;"))))
+   (= AmazonServiceException (class e))
+   (not (.contains (.getMessage e)
+                   "Status Code: 400; Error Code: ValidationException;"))))
 
 (defmacro with-retry
   [& body]
@@ -72,11 +72,11 @@
 (defn- dynamo-not-found?
   [e]
   (and
-    (= AmazonServiceException (class e))
-    (.contains (.getMessage e)
-               "Status Code: 400; Error Code: ValidationException;")
-    (.contains (.getMessage e)
-               "The provided key element does not match the schema")))
+   (= AmazonServiceException (class e))
+   (.contains (.getMessage e)
+              "Status Code: 400; Error Code: ValidationException;")
+   (.contains (.getMessage e)
+              "The provided key element does not match the schema")))
 
 (defmacro with-get-retry
   "hmmm, 400 code ValidationExceptions for gets really do not need to be re-tried.
@@ -120,16 +120,16 @@
 
   (with-get-retry
     (far/get-item
-      (dynamo-creds)
-      (table (name t))
-      m)))
+     (dynamo-creds)
+     (table (name t))
+     m)))
 
 (defn update-item [t k update]
   (with-retry
     (far/update-item
-      (dynamo-creds)
-      (table (name t))
-      k update)))
+     (dynamo-creds)
+     (table (name t))
+     k update)))
 
 (defn with-timestamps [item]
   (assoc item :updated_at (str (time/now))))
@@ -138,31 +138,31 @@
   [t item]
   (with-retry
     (far/put-item
-      (dynamo-creds)
-      (table (name t))
-      (with-timestamps item))))
+     (dynamo-creds)
+     (table (name t))
+     (with-timestamps item))))
 
 (defn delete-item [t m]
   (with-retry
     (far/delete-item
-      (dynamo-creds)
-      (table (name t))
-      m)))
+     (dynamo-creds)
+     (table (name t))
+     m)))
 
 (defn query
   [t q & [opts]]
   (with-retry (far/query
-                (dynamo-creds)
-                (table (name t))
-                q
-                opts)) )
+               (dynamo-creds)
+               (table (name t))
+               q
+               opts)))
 
 (defn scan
   [t]
   (with-retry
     (far/scan
-      (dynamo-creds)
-      (table (name t)))))
+     (dynamo-creds)
+     (table (name t)))))
 
 (defn ensure-table
   "note that ensure-table only creates a table if
@@ -187,8 +187,7 @@
 
 (def rugarchives-tables
   [{:table         :ArchiveOffsets
-    :partition-key [:repo :s]
-    }])
+    :partition-key [:repo :s]}])
 
 (defn ensure-tables []
   (doseq [table-spec rugarchives-tables]

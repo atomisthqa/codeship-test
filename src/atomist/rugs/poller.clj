@@ -125,7 +125,7 @@
       (log/error t))))
 
 (defstate poller
-          :start (do
-                   (initialize-offsets)
-                   (loop/periodic-loop poll 30000))
-          :stop (loop/stop poller))
+  :start (do
+           (initialize-offsets)
+           (loop/periodic-loop poll 30000))
+  :stop (loop/stop poller))

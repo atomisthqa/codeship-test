@@ -7,7 +7,6 @@
             [clojure.tools.logging :as log]
             [io.clj.logging :as mdc]))
 
-
 (defn simple-callback
   [_ message key]
   (try
@@ -37,5 +36,4 @@
   (atomist.rugs.config-service/get-config-value [:kafka])
 
   (mount/stop))
-
 
